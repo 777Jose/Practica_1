@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MoanCay - Inicio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/">
+                <img src="/static/logo.PNG" alt="Logo MoanCay" class="d-inline-block" width="50"  >
+                MoanCay
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/quienes_somos">Quiénes Somos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/servicios">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/noticias">Noticias</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contactos">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="bg-header text-white text-center">
+        <h1>Bienvenidos a MoanCay</h1>
+        <p class="lead" >Confección artesanal y moderna de prendas para toda la familia.</p>
+    </header>
+
+    <section id="testimonials" class="container my-5">
+        <div class="row text-center">
+            <div class="col-md-4">
+                <div class="card shadow-sm">
+                    <img src="/static/2.PNG" class="card-img-top" alt="Calidad">
+                    <div class="card-body">
+                        <h5 class="card-title">Calidad Superior</h5>
+                        <p class="card-text">Prendas confeccionadas con los mejores materiales.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card shadow-sm">
+                    <img src="/static/3.PNG" class="card-img-top" alt="Variedad" >
+                    <div class="card-body">
+                        <h5 class="card-title">Variedad</h5>
+                        <p class="card-text">Ofrecemos prendas para hombres, mujeres y niños.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card shadow-sm">
+                    <img src="/static/4.PNG" class="card-img-top" alt="Personalización">
+                    <div class="card-body">
+                        <h5 class="card-title">Personalización</h5>
+                        <p class="card-text">Adaptamos nuestras prendas a tus necesidades.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p>Síguenos en redes sociales:</p>
+        <a href="https://www.facebook.com/Ingenieriadesistemasupeafuturo" class="btn btn-outline-light" target="_blank" >Facebook</a>
+        <a href="https://www.instagram.com/ingenieriadesistemasupea/?hl=es" class="btn btn-outline-light" target="_blank" >Instagram</a>
+        <a href="https://www.tiktok.com/@ing.sistemas.upea" class="btn btn-outline-light" target="_blank" >TikTok</a>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
