@@ -21,14 +21,12 @@ def noticias():
 @app.route('/contactos', methods=['GET', 'POST'])
 def contactos():
     if request.method == 'POST':
-        nombre = request.form.get('name')  # Corrigiendo el nombre del campo en el HTML y el backend
+        nombre = request.form.get('name') 
         email = request.form.get('email')
         mensaje = request.form.get('mensaje')
 
-        # Depuración: para verificar que los datos lleguen correctamente
         print(f"Nombre: {nombre}, Email: {email}, Mensaje: {mensaje}")
 
-        # Si todo está bien, redirigir a la página de salida
         return render_template('salida.html', nombre=nombre, email=email, mensaje=mensaje)
     
     return render_template('contactos.html')
